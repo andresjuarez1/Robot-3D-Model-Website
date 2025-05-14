@@ -7,7 +7,7 @@ const Robot3d = () => {
   const { scene, animations } = useGLTF("/robot.glb");
   return (
     <div>
-      <Canvas camera={{ zoom: 0.5, position: [0, 0, 5] }} style={{ height: "100vh", width: "600px" }}>
+      <Canvas camera={{ zoom: 0.5, position: [0, 0, 5] }} style={{ height: "100vh", width: "100vh" }}>
         <ambientLight intensity={2} />
         <OrbitControls></OrbitControls>
         <Suspense>
